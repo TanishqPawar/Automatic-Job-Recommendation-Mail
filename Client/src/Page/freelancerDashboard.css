@@ -1,0 +1,128 @@
+/* Sign-out Button Styling */
+.signout-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signout-btn:hover {
+    background-color: #ff1a1a;
+  }
+  
+  /* General Styling */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .job-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative; /* Ensure the container is relative for sign-out button positioning */
+  }
+
+.job-list-container h1 {
+  font-size: 40px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Grid Layout for Job Cards */
+.job-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* Individual Job Card Styling */
+.job-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid #007bff;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Job Title Styling */
+/* Centered Job Title */
+.job-card h1 {
+  color: #007bff;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center; /* Center the h3 text */
+}
+
+/* Text Styling for the Rest of the Job Information */
+.job-card p {
+  margin: 8px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.job-card p strong {
+  color: #555;
+}
+
+.job-card p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Style for Empty Job List Message */
+.job-list p {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #999;
+  font-size: 18px;
+  padding: 5px 0px;
+}
+
+/* Styling the Buttons (if needed in the future) */
+button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .job-list {
+    grid-template-columns: 1fr;
+  }
+}

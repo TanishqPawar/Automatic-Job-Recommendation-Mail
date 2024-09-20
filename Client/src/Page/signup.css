@@ -1,0 +1,130 @@
+/* Center the form in the viewport */
+.main_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110vh;
+  background-color: #f0f0f0;
+}
+
+/* Style the form container */
+form {
+  width: 400px; /* Increased width to accommodate more fields */
+  background-color: #fff;
+  padding: 30px; /* Added more padding for better layout */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.mb-3 {
+  margin-bottom: 20px; /* Added more space between form fields */
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+  display: block;
+  margin-bottom: 5px; /* Ensures spacing between label and input */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none; /* Removes outline on focus */
+}
+
+/* Add focus effect on inputs */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #4caf50; /* Highlight input border on focus */
+}
+
+/* Styling the register button */
+#registerBtn {
+  background-color: #4caf50;
+  width: 100%;
+  padding: 12px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+#registerBtn:hover {
+  background-color: #45a049;
+}
+
+/* Styling for the Login button */
+#loginBtn {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#loginBtn button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#loginBtn button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  text-align: center;
+  margin-top: 15px;
+  color: #888;
+}
+
+/* Success and error messages */
+.success_message {
+  background-color: #dff0d8;
+  color: #3c763d;
+  border: 1px solid #d6e9c6;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.error_message {
+  color: red;
+  text-align: center;
+}
+
+/* Adjust the form width for smaller screens */
+@media (max-width: 500px) {
+  form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: calc(100% - 10px); /* Adjust input width for smaller screens */
+  }
+}
